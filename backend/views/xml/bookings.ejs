@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookings [
+    <!ELEMENT bookings (booking*)>
+    <!ATTLIST bookings export-date CDATA "0000-00-00">
+
+   <!ELEMENT booking (bookingId, status, userId, sessionId, member, session)>
+
+   <!ELEMENT bookingId (#PCDATA)>
+    <!ELEMENT status (#PCDATA)>
+    <!ELEMENT userId (#PCDATA)>
+    <!ELEMENT sessionId (#PCDATA)>
+
+    <!ELEMENT member (firstName, lastName)>
+    <!ELEMENT firstName (#PCDATA)> 
+    <!ELEMENT lastName (#PCDATA)>
+
+    <!ELEMENT session (date, startTime, activity)>
+    <!ELEMENT date (#PCDATA)>
+    <!ELEMENT startTime (#PCDATA)>
+    <!ELEMENT activity (#PCDATA)>
+ ]>
+<bookings export-date="<%= exportDate %>">
+    <% for (const b of bookings) { %>
+    <booking>
+       <bookingId><%= b.bookingId %></bookingId>
+       <status><%= b.status %></status>
+      <userId><%= b.userId %></userId>
+       <sessionId><%= b.sessionId %></sessionId>
+
+         <member>
+             <firstName><%= b.firstName %></firstName>
+             <lastName><%= b.lastName %></lastName>
+        </member>
+
+        <session>
+            <date><%= b.sessionDate %></date>
+           <startTime><%= b.startTime %></startTime>
+           <activity><%= b.activityName %></activity>
+        </session>
+    </booking>
+    <% } %>
+</bookings>
+
