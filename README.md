@@ -13,6 +13,7 @@ Highstreetgym is a full-stack web application for managing  gym activities,  ses
 
 <img width="416" height="809" alt="image" src="https://github.com/user-attachments/assets/6a2ea6b3-28d6-45e1-807d-88cd3f11331e" />
 
+
 <img width="413" height="800" alt="image" src="https://github.com/user-attachments/assets/fa2ad123-9d38-43bb-bded-0ca92adc657f" />
 
 
