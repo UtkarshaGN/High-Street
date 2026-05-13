@@ -1,4 +1,4 @@
-# Highstreetgym
+# Gympro - Mobile-first
 
 ## Description
 Highstreetgym is a full-stack web application for managing  gym activities,  sessions and Bookings. It includes user authentication, protected endpoints, and  XML export features.
